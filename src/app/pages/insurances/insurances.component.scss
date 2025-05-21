@@ -1,0 +1,141 @@
+.insurances-container {
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .insurance-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .insurance-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f9f9fc;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+      margin-bottom: 1rem;
+
+      .insurance-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .insurance-icon {
+          font-size: 2.2rem;
+          color: #4a90e2;
+          flex-shrink: 0;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          .insurance-type {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #2c3e50;
+          }
+
+          .insurance-policy {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 0.2rem;
+            letter-spacing: 0.5px;
+          }
+
+          .insurance-status {
+            margin-top: 0.2rem;
+            font-weight: 600;
+            font-size: 0.9rem;
+
+            &.active {
+              color: #28a745;
+            }
+
+            &.expired {
+              color: #dc3545;
+            }
+          }
+
+          .insurance-expiry {
+            font-size: 0.9rem;
+            color: #777;
+            margin-top: 0.1rem;
+          }
+        }
+      }
+
+      .btn-details {
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: #1b61b1;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .insurance-item {
+      padding: 1.2rem 2rem;
+
+      .insurance-info {
+        .insurance-icon {
+          font-size: 2.8rem;
+        }
+
+        div {
+          .insurance-type {
+            font-size: 1.3rem;
+          }
+
+          .insurance-policy {
+            font-size: 1rem;
+          }
+
+          .insurance-status {
+            font-size: 1rem;
+          }
+
+          .insurance-expiry {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .btn-details {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+      }
+    }
+  }
+}

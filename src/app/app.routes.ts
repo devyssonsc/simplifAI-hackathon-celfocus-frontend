@@ -9,6 +9,8 @@ import { SuportComponent } from './pages/suport/suport.component';
 import { AccountComponent } from './pages/account/account.component';
 import { CardsComponent } from './pages/cards/cards.component';
 import { DetailsCardComponent } from './pages/details-card/details-card.component';
+import { InsurancesComponent } from './pages/insurances/insurances.component';
+import { PrivacySecurityComponent } from './pages/privacy-security/privacy-security.component';
 
 export const routes: Routes = [
     {
@@ -45,11 +47,19 @@ export const routes: Routes = [
         component: AccountComponent
     },
     {
-        path: "cards",
+        path: "account/cards",
         component: CardsComponent
     },
     {
-        path: "cards/details-card",
+        path: "account/cards/details-card",
         component: DetailsCardComponent
+    },
+    {
+        path: "account/insurances",
+        component: InsurancesComponent
+    },
+    {
+        path: "account/privacy-security",
+        component: PrivacySecurityComponent
     }
 ];
