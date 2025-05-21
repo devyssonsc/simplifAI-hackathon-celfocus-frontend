@@ -1,0 +1,103 @@
+.investments-container {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .investment-card {
+        background: #f8faff;
+        border-radius: 10px;
+        padding: 1rem 1.2rem;
+        margin-bottom: 1rem;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+
+        .investment-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+
+            h3 {
+                font-size: 1.2rem;
+                margin: 0;
+            }
+
+            .status {
+                padding: 0.2rem 0.8rem;
+                border-radius: 12px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                color: white;
+
+                &.ativo {
+                    background-color: #28a745;
+                }
+
+                &.inativo {
+                    background-color: #dc3545;
+                }
+
+                &.pendente {
+                    background-color: #ffc107;
+                    color: #212529;
+                }
+            }
+        }
+
+        p {
+            margin: 0.25rem 0;
+            font-size: 1rem;
+        }
+    }
+
+    .btn-novo-investimento {
+        display: block;
+        width: 100%;
+        background-color: #007bff;
+        color: white;
+        padding: 0.85rem 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-align: center;
+
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+
+    @media (min-width: 768px) {
+        max-width: 700px;
+        padding: 2rem;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        .investment-card {
+            padding: 1.5rem 2rem;
+            margin-bottom: 1.5rem;
+
+            .investment-header h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .btn-novo-investimento {
+            width: auto;
+            padding: 0.85rem 2.5rem;
+            margin: 0 auto;
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+.transferencias-container {
+    padding: 1rem;
+
+    h2 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 1.2rem;
+    }
+
+    .transferencias-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .transferencia-item {
+        background: #f0f4f8;
+        padding: 1rem;
+        border-radius: 10px;
+        margin-bottom: 0.8rem;
+        cursor: pointer;
+        transition: background 0.3s;
+
+        &:hover {
+            background: #dceeff;
+        }
+
+        .topo {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.3rem;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .tipo {
+            background-color: #e1ecf4;
+            padding: 0.2rem 0.5rem;
+            border-radius: 12px;
+        }
+    }
+
+    .detalhes-container {
+        margin-top: 1.5rem;
+        background: #ffffff;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+
+        h3 {
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            font-size: 0.95rem;
+            margin: 0.4rem 0;
+        }
+    }
+}

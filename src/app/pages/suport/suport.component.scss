@@ -1,0 +1,136 @@
+.support-container {
+    max-width: 100%;
+    margin: 1rem auto;
+    padding: 1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+        color: #007bff;
+    }
+
+    .faq {
+        margin-bottom: 2rem;
+
+        .faq-item {
+            margin-bottom: 1rem;
+
+            .faq-question {
+                width: 100%;
+                background: #e7f1ff;
+                border: none;
+                padding: 0.8rem 1rem;
+                font-size: 1rem;
+                text-align: left;
+                border-radius: 8px;
+                cursor: pointer;
+                font-weight: 600;
+                color: #007bff;
+                box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                transition: background-color 0.3s;
+
+                &:hover,
+                &:focus {
+                    background: #d0e5ff;
+                    outline: none;
+                }
+            }
+
+            .faq-answer {
+                padding: 0.8rem 1rem;
+                background: #f1f7ff;
+                border-left: 4px solid #007bff;
+                margin-top: 0.3rem;
+                font-size: 0.95rem;
+                line-height: 1.4;
+                border-radius: 0 8px 8px 8px;
+            }
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+        label {
+            margin-bottom: 0.3rem;
+            font-weight: 600;
+        }
+
+        input,
+        textarea {
+            padding: 0.6rem 0.8rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+
+            &:focus {
+                border-color: #007bff;
+                outline: none;
+            }
+        }
+
+        .btn-submit {
+            background-color: #007bff;
+            color: white;
+            padding: 0.9rem 0;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #0056b3;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        max-width: 600px;
+        padding: 2rem;
+
+        h2 {
+            font-size: 2rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        .faq-item {
+            .faq-question {
+                font-size: 1.1rem;
+            }
+
+            .faq-answer {
+                font-size: 1rem;
+            }
+        }
+
+        form {
+
+            input,
+            textarea {
+                font-size: 1.1rem;
+            }
+
+            .btn-submit {
+                font-size: 1.2rem;
+                padding: 1rem 0;
+            }
+        }
+    }
+}

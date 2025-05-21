@@ -1,0 +1,38 @@
+<div class="transferencias-container">
+    <h2>Minhas Transferências</h2>
+
+    <ul class="transferencias-list">
+        <li class="transferencia-item" (click)="verDetalhes('João Silva')" routerLink="details1">
+            <div class="topo">
+                <span class="nome">João Silva</span>
+                <span class="valor">€ 250,00</span>
+            </div>
+            <div class="info">
+                <span>15/04/2024</span>
+                <span class="tipo">SEPA</span>
+            </div>
+        </li>
+
+        <li class="transferencia-item" (click)="verDetalhes('Maria Garcia')">
+            <div class="topo">
+                <span class="nome">Maria Garcia</span>
+                <span class="valor">€ 90,00</span>
+            </div>
+            <div class="info">
+                <span>21/03/2024</span>
+                <span class="tipo">Transferência Interna</span>
+            </div>
+        </li>
+
+        <li class="transferencia-item" (click)="verDetalhes('Empresa ABC')">
+            <div class="topo">
+                <span class="nome">Empresa ABC</span>
+                <span class="valor">€ 580,00</span>
+            </div>
+            <div class="info">
+                <span>10/02/2024</span>
+                <span class="tipo">Débito Direto</span>
+            </div>
+        </li>
+    </ul>
+</div>

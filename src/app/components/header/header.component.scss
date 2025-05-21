@@ -1,0 +1,100 @@
+header {
+  background-color: #004d99;
+  color: white;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  #notification{
+    background-color: red;
+    width: 80%;
+    padding: 20px;
+    position: absolute;
+    top: 500px;
+    left: 10px;
+    border-radius: 10px;
+    display: none;
+
+
+    z-index: 999;
+  }
+
+  .logo img {
+    height: 40px;
+  }
+
+  .menu-toggle {
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    display: block;
+  }
+
+  #overlay{
+    background-color: rgba(0, 0, 0, 0.752);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+  }
+
+  nav {
+    height: 100%;
+    background-color: #005bb5;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    z-index: 2;
+
+    #bt-close-menu{
+        text-align: right;
+    }
+
+    a {
+      color: white;
+      padding: 12px 15px;
+      text-decoration: none;
+      border-top: 1px solid #004080;
+
+      &:hover {
+        background-color: #003366;
+      }
+    }
+  }
+
+  nav.active {
+    display: flex;
+  }
+
+  @media (min-width: 768px) {
+    justify-content: flex-start;
+
+    .menu-toggle {
+      display: none;
+    }
+
+    nav {
+      display: flex !important;
+      flex-direction: row;
+      background: none;
+      margin-left: 20px;
+
+      a {
+        border: none;
+        padding: 10px 15px;
+
+        &:hover {
+          background-color: #003366;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
