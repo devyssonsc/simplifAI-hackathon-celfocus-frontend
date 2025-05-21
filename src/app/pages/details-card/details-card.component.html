@@ -1,0 +1,40 @@
+<div class="card-details-container">
+  <h2>Detalhes do Cartão</h2>
+
+  <section class="card-summary">
+    <i class="bi bi-credit-card-2-front-fill card-icon"></i>
+    <div class="card-info">
+      <h3>Cartão de Crédito</h3>
+      <p class="card-number">Número: **** **** **** 1234</p>
+      <p class="card-holder">Titular: João Silva</p>
+      <p class="card-validity">Validade: 08/25</p>
+      <p class="card-limit">Limite disponível: R$ 4.500,00</p>
+    </div>
+  </section>
+
+  <section class="card-actions">
+    <button class="btn btn-block">Bloquear Cartão</button>
+    <button class="btn btn-renew">Solicitar Renovação</button>
+  </section>
+
+  <section class="transaction-history">
+    <h3>Histórico de Transações</h3>
+    <ul>
+      <li routerLink="/transfers/details1">
+        <span class="date">2025-05-15</span>
+        <span class="desc">João Silva</span>
+        <span class="amount debit">- R$ 250,00</span>
+      </li>
+      <li>
+        <span class="date">2025-05-10</span>
+        <span class="desc">Maria Garcia</span>
+        <span class="amount credit">+ R$ 1.200,00</span>
+      </li>
+      <li>
+        <span class="date">2025-05-05</span>
+        <span class="desc">Empresa ABC</span>
+        <span class="amount debit">- R$ 350,00</span>
+      </li>
+    </ul>
+  </section>
+</div>

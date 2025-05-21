@@ -1,0 +1,123 @@
+.cards-container {
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
+  .cards-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .card-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f5faff;
+      padding: 1rem 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
+
+      .card-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .card-icon {
+          font-size: 2.2rem;
+          color: #007bff;
+          flex-shrink: 0;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+
+          .card-type {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #004085;
+          }
+
+          .card-number {
+            font-size: 0.95rem;
+            color: #555;
+            margin-top: 0.2rem;
+            letter-spacing: 2px;
+          }
+
+          .card-validity {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.1rem;
+          }
+        }
+      }
+
+      .btn-details {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 0.6rem 1rem;
+        font-size: 1rem;
+        font-weight: 600;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover,
+        &:focus {
+          background-color: #0056b3;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 500px;
+    padding: 2rem;
+
+    h2 {
+      font-size: 2rem;
+    }
+
+    .card-item {
+      padding: 1.2rem 2rem;
+
+      .card-info {
+        .card-icon {
+          font-size: 2.8rem;
+        }
+
+        div {
+          .card-type {
+            font-size: 1.3rem;
+          }
+
+          .card-number {
+            font-size: 1rem;
+          }
+
+          .card-validity {
+            font-size: 0.95rem;
+          }
+        }
+      }
+
+      .btn-details {
+        font-size: 1.1rem;
+        padding: 0.7rem 1.2rem;
+      }
+    }
+  }
+}

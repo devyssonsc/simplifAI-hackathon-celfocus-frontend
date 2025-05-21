@@ -7,6 +7,8 @@ import { PaymentsComponent } from './pages/payments/payments.component';
 import { InvestmentsComponent } from './pages/investments/investments.component';
 import { SuportComponent } from './pages/suport/suport.component';
 import { AccountComponent } from './pages/account/account.component';
+import { CardsComponent } from './pages/cards/cards.component';
+import { DetailsCardComponent } from './pages/details-card/details-card.component';
 
 export const routes: Routes = [
     {
@@ -17,10 +19,6 @@ export const routes: Routes = [
     {
         path: "homepage",
         component: HomeComponent
-    },
-    {
-        path: "transfers",
-        component: TransfersComponent
     },
     {
         path: "transfers/details1",
@@ -45,5 +43,13 @@ export const routes: Routes = [
     {
         path: "account",
         component: AccountComponent
+    },
+    {
+        path: "cards",
+        component: CardsComponent
+    },
+    {
+        path: "cards/details-card",
+        component: DetailsCardComponent
     }
 ];

@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-account',
+  selector: 'app-cards',
   standalone: true,
   imports: [RouterModule],
-  templateUrl: './account.component.html',
-  styleUrl: './account.component.scss'
+  templateUrl: './cards.component.html',
+  styleUrl: './cards.component.scss'
 })
-export class AccountComponent {
+export class CardsComponent {
 
 }

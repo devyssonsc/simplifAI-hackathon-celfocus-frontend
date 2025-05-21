@@ -1,0 +1,196 @@
+.card-details-container {
+  max-width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  .card-summary {
+    display: flex;
+    align-items: center;
+    background: #f0f8ff;
+    border-radius: 12px;
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+
+    .card-icon {
+      font-size: 3rem;
+      color: #007bff;
+      margin-right: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .card-info {
+      h3 {
+        margin: 0 0 0.5rem 0;
+        font-weight: 700;
+        font-size: 1.4rem;
+      }
+
+      p {
+        margin: 0.2rem 0;
+        font-size: 1rem;
+        color: #444;
+      }
+    }
+  }
+
+  .card-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+
+    button {
+      flex: 1 1 45%;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &.btn-block {
+        background-color: #dc3545;
+        color: white;
+        margin-right: 1rem;
+
+        &:hover,
+        &:focus {
+          background-color: #a71d2a;
+          outline: none;
+        }
+      }
+
+      &.btn-renew {
+        background-color: #007bff;
+        color: white;
+
+        &:hover,
+        &:focus {
+          background-color: #0056b3;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .transaction-history {
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 0.3rem;
+      max-width: 200px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.8rem 1rem;
+        border-bottom: 1px solid #ddd;
+
+        &:hover{
+          background-color: #ccc;
+        }
+
+        .date {
+          flex: 1 1 100px;
+          color: #666;
+          font-size: 0.9rem;
+        }
+
+        .desc {
+          flex: 2 1 auto;
+          font-size: 1rem;
+          color: #333;
+        }
+
+        .amount {
+          flex: 1 1 100px;
+          font-weight: 700;
+          text-align: right;
+
+          &.debit {
+            color: #dc3545;
+          }
+
+          &.credit {
+            color: #28a745;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 600px;
+    padding: 2rem;
+
+    h2 {
+      font-size: 2.2rem;
+    }
+
+    .card-summary {
+      padding: 1.5rem 2rem;
+
+      .card-icon {
+        font-size: 4rem;
+      }
+
+      .card-info {
+        h3 {
+          font-size: 1.8rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+        }
+      }
+    }
+
+    .card-actions {
+      button {
+        font-size: 1.1rem;
+        padding: 1rem 1.2rem;
+      }
+    }
+
+    .transaction-history {
+      h3 {
+        font-size: 1.8rem;
+      }
+
+      ul li {
+        padding: 1rem 1.2rem;
+
+        .date {
+          font-size: 1rem;
+        }
+
+        .desc {
+          font-size: 1.1rem;
+        }
+
+        .amount {
+          font-size: 1.1rem;
+        }
+
+        
+      }
+    }
+  }
+}
